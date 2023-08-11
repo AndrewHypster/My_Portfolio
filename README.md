@@ -1,1 +1,1 @@
-npm install styled-components@5.3.10
+npm i sass

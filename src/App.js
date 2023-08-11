@@ -1,12 +1,13 @@
 import Fotter from "./components/Fotter";
 import Header from "./components/Header/Header";
-import FirstSlide from "./components/Slides/First";
+import Main from "./components/Slides/Main";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <FirstSlide />
+      <Main />
+      
       <Fotter />
     </div>
   );

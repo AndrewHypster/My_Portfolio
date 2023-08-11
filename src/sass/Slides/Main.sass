@@ -1,0 +1,105 @@
+/* Критичні ширини: 1135 */
+
+.Main
+  height: 593px
+
+  .content
+    justify-content: space-between
+    display: flex
+
+    .about-me
+      margin-top: -1rem
+      margin-left: 6.1875rem
+      display: flex
+
+      .line
+        width: 2.5px
+        height: 25rem
+        background: #010001
+      
+      .text-conteiner
+        margin: 0.5rem 0 0 0.9375rem
+
+        .text
+          margin-bottom: 1rem
+          font-family: Lexend
+          align-items: baseline
+          display: flex
+        
+          h2
+            letter-spacing: -0.105rem
+            font-family: Lexend
+            color: #0059AB
+          
+          h3, h4
+            font-family: Lexend
+
+          .orange
+            letter-spacing: -0.075rem
+            color: #DC6F2E
+
+        .small-text
+          margin-top: 2.81rem
+
+          p
+            margin-bottom: 0.94rem
+            font-family: Lexend
+
+    .me
+      img
+        width: 18.75rem
+      
+      div
+        height: 7.125rem
+        transform: translateY(-100%)
+        background: linear-gradient(180deg, rgba(240, 248, 255, 0.07) 0%, rgba(240, 248, 255, 0.71) 60.94%, rgba(240, 248, 255, 0.94) 84.90%, #F0F8FF 100%)
+    
+  .circles
+    width: 618px
+    height: 576px
+    position: relative
+    z-index: -1
+    transform: translate(618px, -603px)
+    display: grid
+
+    .blue
+      width: 100px
+      height: 100px
+      
+    .orange
+      width: 100px
+      height: 100px
+      position: absolute
+      right: 0
+      bottom: 0
+
+    svg
+      transform: translate(-100px, -50px)
+
+@media (width < 1136px)
+  .Main
+    .content
+      .about-me
+        margin-left: 0px
+
+        .text-conteiner
+          .text
+            margin-bottom: 0.4rem
+            font-size: 1.8rem
+
+            h2
+              font-size: 2.8rem
+            
+            .orange
+              font-size: 1.8rem
+
+          .small-text
+            margin-top: 1.4rem
+      
+      .me
+        img
+          width: 14rem
+        
+        div
+          height: 4.5rem
+      

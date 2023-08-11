@@ -1,13 +1,13 @@
-import ColorT from "../ColorText"
-import { SHeader } from "./style"
+import ColorT from "../some/ColorText"
+import '../../sass/Header.sass'
 
 const Header = () => {
   return(
-    <SHeader>
+    <header>
       <h4>
         <ColorT text='MyPortfolio' indexes={[0, 4, 6, 10]} color='blue' />
       </h4>
-    </SHeader>
+    </header>
   )
 }
 
