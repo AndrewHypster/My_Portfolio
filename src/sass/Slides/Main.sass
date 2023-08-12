@@ -1,4 +1,4 @@
-/* Критичні ширини: 1135 */
+/* Критичні ширини: 1418 903 */
 
 .Main
   height: 593px
@@ -7,6 +7,13 @@
     justify-content: space-between
     display: flex
 
+    h1
+      animation: text 2s
+
+    .mobile-me
+      height: 14rem
+      display: none
+
     .about-me
       margin-top: -1rem
       margin-left: 6.1875rem
@@ -14,17 +21,23 @@
 
       .line
         width: 2.5px
-        height: 25rem
+        height: 0
         background: #010001
+        animation: line-text 2s forwards
+        animation-delay: 2s
       
       .text-conteiner
         margin: 0.5rem 0 0 0.9375rem
+        overflow: hidden
 
         .text
           margin-bottom: 1rem
           font-family: Lexend
           align-items: baseline
           display: flex
+          transform: translateX(-100%)
+          animation: text 3s forwards
+          animation-delay: 3s
         
           h2
             letter-spacing: -0.105rem
@@ -40,6 +53,9 @@
 
         .small-text
           margin-top: 2.81rem
+          transform: translateX(-100%)
+          animation: text 3s forwards
+          animation-delay: 3s
 
           p
             margin-bottom: 0.94rem
@@ -50,9 +66,11 @@
         width: 18.75rem
       
       div
-        height: 7.125rem
+        height: 25rem
         transform: translateY(-100%)
-        background: linear-gradient(180deg, rgba(240, 248, 255, 0.07) 0%, rgba(240, 248, 255, 0.71) 60.94%, rgba(240, 248, 255, 0.94) 84.90%, #F0F8FF 100%)
+        background: linear-gradient(180deg, #F0F8FF, #F0F8FF)
+        animation: photo 3s forwards
+        animation-delay: 3s
     
   .circles
     width: 618px
@@ -76,11 +94,33 @@
     svg
       transform: translate(-100px, -50px)
 
-@media (width < 1136px)
+@keyframes text
+  from
+    transform: translateX(-100%)
+  to
+    transform: translateX(0%)
+
+@keyframes photo
+  from
+    height: 15rem
+  to
+    height: 7.125rem
+    background: linear-gradient(180deg, rgba(240, 248, 255, 0.07) 0%, rgba(240, 248, 255, 0.71) 60.94%, rgba(240, 248, 255, 0.94) 84.90%, #F0F8FF 100%)
+
+@keyframes line-text
+  from
+    height: 0rem
+  to
+    height: 25rem
+
+@media (width < 1419px)
   .Main
     .content
       .about-me
-        margin-left: 0px
+        margin-left: 3vw
+
+        .line
+          background: transparent
 
         .text-conteiner
           .text
@@ -101,5 +141,16 @@
           width: 14rem
         
         div
-          height: 4.5rem
+          height: 15rem
+
+@media (width < 904px)
+  .Main
+    .content
+      .me
+        display: none
+
+      .mobile-me
+        display: block
+
+  
       

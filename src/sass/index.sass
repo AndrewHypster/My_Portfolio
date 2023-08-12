@@ -11,8 +11,8 @@ body
   display: flex
 
 .App
-  width: 100vw
-  max-width: 83.5rem
+  width: 80vw
+  max-width: 86rem
   height: 100vh
 
 /* Заголовки */
@@ -42,3 +42,7 @@ body::-webkit-scrollbar-track /* задній фон */
 body::-webkit-scrollbar-thumb   
   background-color: #609024    /* колір того що рухається */   
   border-radius: 3px
+
+@media (width < 1136px)
+  .App
+    width: 90vw
