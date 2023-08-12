@@ -10,7 +10,7 @@
 
 # production
 #/build
-delete.css
+/delete
 
 # misc
 .DS_Store
