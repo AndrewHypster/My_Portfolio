@@ -1,18 +1,17 @@
-/* Критичні ширини: 1418 903 */
+/* Критичні ширини: 1418 904 */
 
 .Main
   height: 593px
 
   .content
-    justify-content: space-between
-    display: flex
 
     h1
       animation: text 2s
 
-    .mobile-me
-      height: 14rem
-      display: none
+    .left
+      flex-direction: row-reverse
+      justify-content: space-between
+      display: flex
 
     .about-me
       margin-top: -1rem
@@ -62,15 +61,14 @@
             font-family: Lexend
 
     .me
+      width: fit-content
       img
         width: 18.75rem
       
       div
         height: 25rem
         transform: translateY(-100%)
-        background: linear-gradient(180deg, #F0F8FF, #F0F8FF)
-        animation: photo 3s forwards
-        animation-delay: 3s
+        background: linear-gradient(180deg, rgba(240, 248, 255, 0.07) 60%, rgba(240, 248, 255, 0.71) 80%, rgba(240, 248, 255, 0.94) 95%, #F0F8FF 99%)
     
   .circles
     width: 618px
@@ -99,13 +97,6 @@
     transform: translateX(-100%)
   to
     transform: translateX(0%)
-
-@keyframes photo
-  from
-    height: 15rem
-  to
-    height: 7.125rem
-    background: linear-gradient(180deg, rgba(240, 248, 255, 0.07) 0%, rgba(240, 248, 255, 0.71) 60.94%, rgba(240, 248, 255, 0.94) 84.90%, #F0F8FF 100%)
 
 @keyframes line-text
   from
@@ -143,14 +134,22 @@
         div
           height: 15rem
 
-@media (width < 904px)
+@media (width < 905px)
   .Main
+    height: fit-content
+    
     .content
-      .me
-        display: none
-
-      .mobile-me
+      .left
+        height: 35rem
         display: block
 
+      .about-me
+        transform: translateY(-60%)
+      
+      .me
+        margin: 20px auto
+
+        img
+          width: 18rem
   
       
