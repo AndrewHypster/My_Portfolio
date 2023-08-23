@@ -9,10 +9,10 @@ const ColorT = (props) => { // props = text, indexes, first-color
 
   props.text.split('').forEach((e, i) => {
     if (props.indexes.some(e => e === i)) { // якщо маєм помалювати букву
-      res.push(<div style={{color: `${colors[`${color}`]}` }}>{e}</div>)
+      res.push(<div style={{color: `${colors[`${color}`]}` }} key={i}>{e}</div>)
       color = color === 'blue'? 'orange' : 'blue' // чергуєм колір
     }
-    else if (e === ' ') res.push(<pre> </pre>) // в реченні попався пробіл
+    else if (e === ' ') res.push(<pre key={i}> </pre>) // в реченні попався пробіл
     else res.push(e) // проста чорна буква
   })
 

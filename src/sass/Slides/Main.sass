@@ -1,7 +1,8 @@
-/* Критичні ширини: 1418 905 646 */
+/* Критичні ширини: 1419 905 646 - 347 */
 
 .Main
   height: 593px
+  margin-top: 2rem
 
   .content
 
@@ -62,11 +63,18 @@
 
     .me
       width: fit-content
+      height: 17rem
+      overflow: hidden
       img
         width: 18.75rem
+        transform: translateY(100%)
+        pointer-events: none
+        animation: mePhoto 2s forwards
+        animation-delay: 2s
       
       div
-        height: 25rem
+        height: 17rem
+        pointer-events: none
         transform: translateY(-100%)
         background: linear-gradient(180deg, rgba(240, 248, 255, 0.07) 60%, rgba(240, 248, 255, 0.71) 80%, rgba(240, 248, 255, 0.94) 95%, #F0F8FF 99%)
     
@@ -104,6 +112,12 @@
   to
     height: 25rem
 
+@keyframes mePhoto
+  from
+    transform: translateY(100%)
+  to
+    transform: translateY(0%)
+
 @media (width < 1419px)
   .Main
     .content
@@ -128,15 +142,18 @@
             margin-top: 1.4rem
       
       .me
+        height: 12.8rem
+
         img
           width: 14rem
         
         div
-          height: 15rem
+          height: 14rem
 
 @media (width < 905px)
   .Main
     height: fit-content
+    margin-top: 1rem
 
     .content
       h1
@@ -145,11 +162,9 @@
       .left
         height: 35rem
         display: block
-
-      .about-me
-        transform: translateY(-60%)
       
       .me
+        height: 16.4rem
         margin: 20px auto
 
         img
@@ -174,5 +189,3 @@
 
           .small-text
             font-size: 0.8rem
-  
-      

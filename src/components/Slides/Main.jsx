@@ -2,6 +2,18 @@ import ColorT from "../some/ColorText";
 import "../../sass/Slides/Main.sass";
 
 const Main = () => {
+  const hoverMe = me => {
+    const img = me.target.firstChild
+    img.style = `
+      display: none;
+    `
+    me.target.style = `
+      width: ${img.width}px;
+      background: black;
+    `
+    console.log(img.width);
+  }
+ 
   return (
     <div className="Main">
       <div className="content">
@@ -9,7 +21,7 @@ const Main = () => {
           <ColorT text="Front End" indexes={[1, 4, 8]} color="orange" />
         </h1>
         <div className="left">
-          <div className="me">
+          <div className="me" onMouseDown={hoverMe}>
             <img src="imgs/me.png" alt="It's me" />
           <div />
           </div>
