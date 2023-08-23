@@ -1,4 +1,4 @@
-/* Критичні ширини: 1418 904 */
+/* Критичні ширини: 1418 905 646 */
 
 .Main
   height: 593px
@@ -137,8 +137,12 @@
 @media (width < 905px)
   .Main
     height: fit-content
-    
+
     .content
+
+      h1
+        font-size: 5rem
+
       .left
         height: 35rem
         display: block
@@ -151,5 +155,22 @@
 
         img
           width: 18rem
+
+@media (width < 646px)
+  .Main
+    .content
+      .about-me
+        .text-conteiner
+          .text
+            font-size: 1rem
+
+            h2
+              font-size: 1.5rem
+
+            .orange
+              font-size: 1.3rem
+
+          .small-text
+            font-size: 0.8rem
   
       
