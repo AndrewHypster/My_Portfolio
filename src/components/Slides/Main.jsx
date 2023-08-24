@@ -2,28 +2,16 @@ import ColorT from "../some/ColorText";
 import "../../sass/Slides/Main.sass";
 
 const Main = () => {
-  const hoverMe = me => {
-    const img = me.target.firstChild
-    img.style = `
-      display: none;
-    `
-    me.target.style = `
-      width: ${img.width}px;
-      background: black;
-    `
-    console.log(img.width);
-  }
- 
   return (
-    <div className="Main">
+    <div className="Main" id="Main">
       <div className="content">
         <h1>
           <ColorT text="Front End" indexes={[1, 4, 8]} color="orange" />
         </h1>
         <div className="left">
-          <div className="me" onMouseDown={hoverMe}>
+          <div className="me">
             <img src="imgs/me.png" alt="It's me" />
-          <div />
+            <div />
           </div>
           <div className="about-me">
             <div className="line" />
@@ -48,89 +36,6 @@ const Main = () => {
           </div>
         </div>
       </div>
-      {/* <div className="circles">
-        <div className="blue">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="297"
-            height="297"
-            viewBox="0 0 300 300"
-            fill="none"
-          >
-            <g filter="url(#filter0_f_71_2)">
-              <circle
-                cx="150"
-                cy="150"
-                r="50"
-                fill="#0059AB"
-                fill-opacity="0.59"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_f_71_2"
-                x="0"
-                y="0"
-                width="300"
-                height="300"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="50"
-                  result="effect1_foregroundBlur_71_2"
-                />
-              </filter>
-            </defs>
-          </svg>
-        </div>
-        <div className="orange">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="297"
-            height="297"
-            viewBox="0 0 300 300"
-            fill="none"
-          >
-            <g filter="url(#filter0_f_72_3)">
-              <path
-                d="M200 150C200 177.614 177.614 200 150 200C122.386 200 100 177.614 100 150C100 122.386 122.386 100 150 100C177.614 100 200 122.386 200 150Z"
-                fill="#DC6F2E"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_f_72_3"
-                x="0"
-                y="0"
-                width="300"
-                height="300"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="50"
-                  result="effect1_foregroundBlur_72_3"
-                />
-              </filter>
-            </defs>
-          </svg>
-        </div>
-      </div> */}
     </div>
   );
 };

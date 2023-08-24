@@ -1,9 +1,18 @@
+html
+  cursor: none
+
 .cursor
   position: absolute
   z-index: 10
   width: 20px
   height: 20px
-  border: solid 2px #000000
+  border: solid 2px #010001
   border-radius: 50%
   pointer-events: none
   transition: border 0.3s
+
+@media (width < 905px)
+  html
+    cursor: default
+  .cursor
+    display: none

@@ -1,8 +1,9 @@
 /* Критичні ширини: 1419 905 646 - 347 */
 
 .Main
-  height: 593px
-  margin-top: 2rem
+  height: 100vh
+  align-content: center
+  display: grid
 
   .content
 
@@ -77,28 +78,6 @@
         pointer-events: none
         transform: translateY(-100%)
         background: linear-gradient(180deg, rgba(240, 248, 255, 0.07) 60%, rgba(240, 248, 255, 0.71) 80%, rgba(240, 248, 255, 0.94) 95%, #F0F8FF 99%)
-    
-  .circles
-    width: 618px
-    height: 576px
-    position: relative
-    z-index: -1
-    transform: translate(618px, -603px)
-    display: grid
-
-    .blue
-      width: 100px
-      height: 100px
-      
-    .orange
-      width: 100px
-      height: 100px
-      position: absolute
-      right: 0
-      bottom: 0
-
-    svg
-      transform: translate(-100px, -50px)
 
 @keyframes text
   from
@@ -169,6 +148,9 @@
 
         img
           width: 18rem
+      
+      .about-me
+        margin-left: 0
 
 @media (width < 646px)
   .Main

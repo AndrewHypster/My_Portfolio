@@ -1,20 +1,30 @@
 header
-  width: 100%
+  width: 80vw
+  max-width: 86rem
   position: fixed
   top: 0
   z-index: 1
   max-height: 7.625rem
-  align-content: center
+  align-items: baseline
   transition: all 0.5s
   background: aliceblue
-  display: grid
+  animation: text-down 1.5s
+  justify-content: space-between
+  display: flex
 
   a
     width: fit-content
     text-decoration: none
 
-    h4
-      animation: text-down 1.5s
+  ul
+    grid-column-gap: 20px
+    grid-template-columns: 1fr 1fr 1fr
+    display: grid
+
+    a
+      margin: auto
+    li
+      list-style-type: none
 
 @keyframes text-down
   from
@@ -22,6 +32,10 @@ header
 
   to
     transform: translateY(0%)
+
+@media (width < 1136px)
+  header
+    width: 90vw
 
 @media (width < 905px)
   header
