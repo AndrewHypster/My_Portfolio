@@ -25,21 +25,22 @@ const Header = () => {
           <ColorT text='MyPortfolio' indexes={[0, 4, 6, 10]} color='blue' />
         </h4>
       </a>
+      
+      <div>
+        <ul>
+          <a href="#works" ><li>works</li></a>
+          <a href="#resume"><li>about me</li></a>
+          <a href="#hobbies"><li>hobbies</li></a>
+        </ul>
 
-      <ul>
-        <a href="#works" ><li>works</li></a>
-        <a href="#resume"><li>about me</li></a>
-        <a href="#hobbies"><li>hobbies</li></a>
-      </ul>
-
-      <a onClick={sideBar}>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" xmlnsSvgjs="http://svgjs.com/svgjs" width="20" height="20" x="0" y="0" viewBox="0 0 24 24" style={{enableBackground: 'new 0 0 512 512'}} xmlSpace="preserve">
-          <g>
-            <path d="M21 7H8a1 1 0 0 1 0-2h13a1 1 0 0 1 0 2zm1 5a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h18a1 1 0 0 0 1-1zm0 6a1 1 0 0 0-1-1h-9a1 1 0 0 0 0 2h9a1 1 0 0 0 1-1z" fill="#000000" data-original="#000000"></path>
-          </g>
-        </svg>
-      </a>
-
+        <a onClick={sideBar}>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" xmlnsSvgjs="http://svgjs.com/svgjs" width="20" height="20" x="0" y="0" viewBox="0 0 24 24" style={{enableBackground: 'new 0 0 512 512'}} xmlSpace="preserve">
+            <g>
+              <path d="M21 7H8a1 1 0 0 1 0-2h13a1 1 0 0 1 0 2zm1 5a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h18a1 1 0 0 0 1-1zm0 6a1 1 0 0 0-1-1h-9a1 1 0 0 0 0 2h9a1 1 0 0 0 1-1z" fill="#000000" data-original="#000000"></path>
+            </g>
+          </svg>
+        </a>
+      </div>
     </header>
   )
 }
