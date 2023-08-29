@@ -16,7 +16,7 @@ const MyWorks = () => {
     
       if (goto === 'up') position++
       else if (goto === 'down') position--
-    }, 25)
+    }, 22)
   }
 
   return (

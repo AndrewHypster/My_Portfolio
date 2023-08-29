@@ -18,6 +18,8 @@
       transform: translate(-35%, -85%)
 
   .slider
+    width: 80vw
+    max-width: 86rem
     margin-top: 6rem
     overflow: hidden
     cursor: grab
@@ -34,3 +36,34 @@
 
       img
         width: 100px
+
+@media (width < 1136px)
+  #MyWorks
+    .slider
+      width: 90vw
+
+@media (width < 905px)
+  #MyWorks
+    h1
+      font-size: 5rem
+    
+    .circle-box
+      .circle
+        width: 900px
+        height: 900px
+
+@media (width < 646px)
+  #MyWorks
+    h1
+      font-size: 3rem
+    
+    .circle-box
+      transform: translateY(-50px)
+
+      .circle
+        width: 500px
+        height: 500px
+        border: 7px solid #010001
+
+
+/* Критичні ширини: 1419 905 646 - 335 */
