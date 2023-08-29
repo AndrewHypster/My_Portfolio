@@ -15,17 +15,33 @@
     right: 25px
 
     .first
-      width: 4px
-      height: 20px
+      width: 0px
+      height: 4px
       position: absolute
       border-radius: 50% 0
       background: aliceblue
-      transform: rotate(45deg)
+      animation: 3s exit-f 1.5s forwards
 
     .second
-      width: 4px
-      height: 20px
+      width: 0px
+      height: 4px
       position: absolute
       border-radius: 0 50%
       background: aliceblue
-      transform: rotate(325deg)
+      animation: 3s exit-s 1.5s forwards
+
+@keyframes exit-f
+  50%
+    width: 20px
+    transform: rotate(0deg)
+  100%
+    width: 20px
+    transform: rotate(-125deg)
+
+@keyframes exit-s
+  50%
+    width: 20px
+    transform: rotate(0deg)
+  100%
+    width: 20px
+    transform: rotate(125deg)

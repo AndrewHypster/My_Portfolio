@@ -16,6 +16,10 @@ const Header = () => {
   const sideBar = () => {
     const SideBar = document.querySelector('#SideBar')
     SideBar.style.transform = 'translateX(0%)'
+    setTimeout(() => {
+      const exitF = document.querySelector('.exit').querySelector('.first')
+      const exitS = document.querySelector('.exit').querySelector('.second')
+    }, 1500)
   }
 
   return(
@@ -28,7 +32,7 @@ const Header = () => {
       
       <div>
         <ul>
-          <a href="#works" ><li>works</li></a>
+          <a href="#MyWorks" ><li>my works</li></a>
           <a href="#resume"><li>about me</li></a>
           <a href="#hobbies"><li>hobbies</li></a>
         </ul>
