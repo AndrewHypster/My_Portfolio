@@ -13,7 +13,8 @@ function App() {
       <SideBar />
       <Main />
       <MyWorks />
-      
+
+      <AnotherSlide text='Сертифікати' id='sertyficate'/>
       <AnotherSlide text='Типу резюме' id='resume'/>
       <AnotherSlide text='Хоббі' id='hobbies'/>
     </div>

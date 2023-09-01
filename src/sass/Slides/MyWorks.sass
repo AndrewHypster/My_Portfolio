@@ -21,21 +21,37 @@
     width: 80vw
     max-width: 86rem
     margin-top: 6rem
-    overflow: hidden
     cursor: grab
-    grid-template-columns: repeat(7, max-content)
     grid-column-gap: 5rem
-    display: grid
+    display: flex
 
     .card
-      width: 13rem
-      height: 18rem
-      background: rgb(212, 94, 39)
+      width: 12rem
+      height: 15rem
+      background: black
       border-radius: 20px
       box-shadow: 0 0 5px black
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
 
-      img
-        width: 100px
+      .text
+        width: 10rem
+        margin: 100% 0 0 -30%
+        padding: 5px
+        border-radius: 8px
+        background: rgba(96, 144, 36, 0.85)
+
+        h1
+          font-size: 1.2rem
+          font-weight: 800
+          color: #010001
+
+        p
+          font-size: 0.8rem
+          font-weight: 800
+          color: #010001
+
 
 @media (width < 1136px)
   #MyWorks

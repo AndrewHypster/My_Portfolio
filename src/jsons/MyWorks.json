@@ -1,0 +1,27 @@
+[
+  {
+    "img": "./imgs/max.png",
+    "title": "Title",
+    "short-description": "short description short description short description",
+    "description": "",
+    "technologies": [""]
+  },{
+    "img": "https://s09.stc.yc.kpcdn.net/share/i/12/12147773/de-1200.jpg",
+    "title": "Title",
+    "short-description": "short description short description short description",
+    "description": "",
+    "technologies": [""]
+  },{
+    "img": "https://focus.ua/static/storage/thumbs/920x465/d/84/74a0022e-1e02c64d1a830c4050f2cb7cae28a84d.jpg?v=0127_1",
+    "title": "Title",
+    "short-description": "short description short description short description",
+    "description": "",
+    "technologies": [""]
+  },{
+    "img": "https://s09.stc.yc.kpcdn.net/share/i/12/12147773/de-1200.jpg",
+    "title": "Title",
+    "short-description": "short description short description short description",
+    "description": "",
+    "technologies": [""]
+  }
+]
