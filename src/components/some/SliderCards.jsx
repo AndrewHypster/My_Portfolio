@@ -2,7 +2,7 @@ import Cards from '../../jsons/MyWorks.json'
 
 const SliderCards = () => {
 
-  window.onload = () => {
+  window.addEventListener('load', () => {
     const img = document.querySelector('.slider').querySelector('.card')
     const start = img.parentElement.clientWidth
     const cards = document.querySelectorAll('.card')
@@ -17,7 +17,25 @@ const SliderCards = () => {
       if (goto === 'left') position++
       else if (goto === 'right') position--
     }, 22)
-  }
+  });
+    
+
+  // window.onload = () => {
+  //   const img = document.querySelector('.slider').querySelector('.card')
+  //   const start = img.parentElement.clientWidth
+  //   const cards = document.querySelectorAll('.card')
+  //   let position = start
+  //   let goto = 'left'
+    
+  //   setInterval(() => {
+  //     cards.forEach(card => card.style.transform = `translateX(${position}px)`)
+  //     if (position >= start) goto = 'right'
+  //     if (position <= -img.clientWidth * Cards.length) goto = 'left'
+    
+  //     if (goto === 'left') position++
+  //     else if (goto === 'right') position--
+  //   }, 22)
+  // }
 
   return (
     <div className="slider">
