@@ -2,7 +2,7 @@ import Cards from '../../jsons/MyWorks.json'
 
 const SliderCards = () => {
 
-  window.addEventListener('load', () => {
+  window.addEventListener('DOMContentLoaded', () => {
     const img = document.querySelector('.slider').querySelector('.card')
     const start = img.parentElement.clientWidth
     const cards = document.querySelectorAll('.card')
@@ -17,7 +17,7 @@ const SliderCards = () => {
     
       // if (goto === 'left') position++
       // else if (goto === 'right') position--
-    }, 10)
+    }, 2)
   });
     
 
