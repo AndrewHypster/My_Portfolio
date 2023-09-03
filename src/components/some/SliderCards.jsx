@@ -11,12 +11,13 @@ const SliderCards = () => {
     
     setInterval(() => {
       cards.forEach(card => card.style.transform = `translateX(${position}px)`)
-      if (position >= start) goto = 'right'
-      if (position <= -img.clientWidth * Cards.length) goto = 'left'
+      position --
+      // if (position >= start) goto = 'right'
+      // if (position <= -img.clientWidth * Cards.length) goto = 'left'
     
-      if (goto === 'left') position++
-      else if (goto === 'right') position--
-    }, 22)
+      // if (goto === 'left') position++
+      // else if (goto === 'right') position--
+    }, 10)
   });
     
 
