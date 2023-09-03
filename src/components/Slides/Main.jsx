@@ -7,7 +7,6 @@ const Main = () => {
       <div className="content">
         <h1>
           <ColorT text="Front End" indexes={[1, 4, 8]} color="orange" />
-          <small style={{fontSize: '2rem'}}>MAXIK.888</small>
         </h1>
         <div className="left">
           <div className="me">

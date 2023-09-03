@@ -2,8 +2,6 @@ import Cards from '../../jsons/MyWorks.json'
 
 const SliderCards = () => {
 
-  const slider = document.querySelector('.slider')
-
   window.onload = () => {
     const img = document.querySelector('.slider').querySelector('.card')
     const start = img.parentElement.clientWidth
