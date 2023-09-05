@@ -18,12 +18,10 @@
       transform: translate(-35%, -85%)
 
   .sliders
+    gap: 5rem
     display: flex
-    gap: 8rem
 
     .slider
-      width: 80vw
-      max-width: 86rem
       margin-top: 6rem
       cursor: grab
       grid-column-gap: 5rem
@@ -61,15 +59,12 @@
   0%
     transform: translateX(0)
   100%
-      transform: translateX(calc(-100% - 8rem))
+      transform: translateX(calc(-100% - 5rem))
 
 @media (width < 1136px)
   #MyWorks
     .circle-box
       width: 600px
-
-    .slider
-      width: 90vw
 
 @media (width < 905px)
   #MyWorks
