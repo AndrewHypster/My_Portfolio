@@ -10,7 +10,7 @@ const Main = () => {
         </h1>
         <div className="left">
           <div className="me">
-            <img src="imgs/me.png" alt="It's me" />
+            <img src="../../../imgs/me.png" alt="It's me" />
             <div />
           </div>
           <div className="about-me">

@@ -1,34 +1,34 @@
 [
   {
-    "img": "./imgs/MyWorks/1.png",
+    "img": "../../../imgs/MyWorks/1.png",
     "title": "Sign in / up",
     "short-description": "React, routes, styled-components, hooks",
     "description": "",
     "technologies": [""],
     "imgCollor": "Dark"
   },{
-    "img": "./imgs/MyWorks/2.png",
+    "img": "../../../imgs/MyWorks/2.png",
     "title": "Posts",
     "short-description": "React, Redux, hooks",
     "description": "",
     "technologies": [""],
     "imgCollor": "Dark"
   },{
-    "img": "./imgs/MyWorks/3.png",
+    "img": "../../../imgs/MyWorks/3.png",
     "title": "Calculator",
     "short-description": "vanial JS",
     "description": "",
     "technologies": [""],
     "imgCollor": "Dark"
   },{
-    "img": "./imgs/MyWorks/4.png",
+    "img": "../../../imgs/MyWorks/4.png",
     "title": "X and O",
     "short-description": "vanial JS",
     "description": "",
     "technologies": [""],
     "imgCollor": "Dark"
   },{
-    "img": "./imgs/MyWorks/5.png",
+    "img": "../../../imgs/MyWorks/5.png",
     "title": "Tetris",
     "short-description": "vanial JS",
     "description": "",

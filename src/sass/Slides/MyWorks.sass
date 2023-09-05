@@ -18,15 +18,14 @@
       transform: translate(-35%, -85%)
 
   .sliders
-    gap: 5rem
+    gap: 3rem
     display: flex
 
     .slider
       margin-top: 6rem
       cursor: grab
-      grid-column-gap: 5rem
+      grid-column-gap: 3rem
       display: flex
-      animation-direction: reverse
       animation: scroll 10s linear infinite
 
       .card
@@ -59,7 +58,7 @@
   0%
     transform: translateX(0)
   100%
-      transform: translateX(calc(-100% - 5rem))
+      transform: translateX(calc(-100% - 3rem))
 
 @media (width < 1136px)
   #MyWorks
@@ -78,6 +77,9 @@
         width: 900px
         height: 900px
 
+    .slider
+      animation: scroll 15s linear infinite !important
+
 @media (width < 646px)
   #MyWorks
     h1
@@ -92,5 +94,7 @@
         height: 500px
         border: 7px solid #010001
 
+    .slider
+      animation: scroll 20s linear infinite !important
 
 /* Критичні ширини: 1419 905 646 - 335 */

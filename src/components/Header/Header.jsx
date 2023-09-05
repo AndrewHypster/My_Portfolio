@@ -1,5 +1,6 @@
 import ColorT from "../some/ColorText"
 import '../../sass/Header.sass'
+import { Link } from "react-router-dom"
 
 const Header = () => {
 
@@ -24,11 +25,11 @@ const Header = () => {
 
   return(
     <header>
-      <a href="#Main">
+      <Link to="My_Portfolio/build/index.html">
         <h4>
           <ColorT text='MyPortfolio' indexes={[0, 4, 6, 10]} color='blue' />
         </h4>
-      </a>
+      </Link>
       
       <div>
         <ul>
