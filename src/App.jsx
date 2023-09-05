@@ -8,9 +8,10 @@ function App() {
     <div className="App">
       <Header />
 
-      <Routes>
+      {/* <Routes>
         <Route index element={<MainPage />} />
-      </Routes>
+      </Routes> */}
+      <MainPage />
 
       {/* <AnotherSlide text='Сертифікати' id='sertyficate'/>
       <AnotherSlide text='Типу резюме' id='resume'/>
