@@ -17,41 +17,51 @@
       opacity: 0.7
       transform: translate(-35%, -85%)
 
-  .slider
-    width: 80vw
-    max-width: 86rem
-    margin-top: 6rem
-    cursor: grab
-    grid-column-gap: 5rem
+  .sliders
     display: flex
+    gap: 8rem
 
-    .card
-      width: 12rem
-      height: 15rem
-      background: black
-      border-radius: 20px
-      box-shadow: 0 0 5px black
-      background-size: cover
-      background-repeat: no-repeat
-      background-position: center
+    .slider
+      width: 80vw
+      max-width: 86rem
+      margin-top: 6rem
+      cursor: grab
+      grid-column-gap: 5rem
+      display: flex
+      animation-direction: reverse
+      animation: scroll 10s linear infinite
 
-      .text
-        width: 10rem
-        margin: 100% 0 0 -30%
-        padding: 5px
-        border-radius: 8px
-        background: rgba(96, 144, 36, 0.85)
+      .card
+        width: 12rem
+        height: 15rem
+        background: black
+        border-radius: 20px
+        box-shadow: 0 0 5px black
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
 
-        h1
-          font-size: 1.2rem
-          font-weight: 800
-          color: #010001
+        .text
+          width: 10rem
+          padding: 4px
+          border-radius: 8px 0
+          background: #d8dfe6
+          bottom: -10%
+          left: -20%
 
-        p
-          font-size: 0.8rem
-          font-weight: 800
-          color: #010001
+          h1
+            font-size: 1.2rem
+            font-weight: 800
 
+          p
+            font-size: 0.8rem
+            font-weight: 800
+
+@keyframes scroll
+  0%
+    transform: translateX(0)
+  100%
+      transform: translateX(calc(-100% - 8rem))
 
 @media (width < 1136px)
   #MyWorks

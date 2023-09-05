@@ -1,22 +1,20 @@
+import { Route, Routes } from "react-router-dom";
 import AnotherSlide from "./components/AnotherSlide";
 import Header from "./components/Header/Header";
-import Main from "./components/Slides/Main";
-import MyWorks from "./components/Slides/MyWorks";
-import SideBar from "./components/Slides/SideBar";
-import Cursor from "./components/some/Cursor";
+import MainPage from "./components/MainPage";
 
 function App() {
   return (
     <div className="App">
-      <Cursor />
       <Header />
-      <SideBar />
-      <Main />
-      <MyWorks />
 
-      <AnotherSlide text='Сертифікати' id='sertyficate'/>
+      <Routes>
+        <Route index element={<MainPage />} />
+      </Routes>
+
+      {/* <AnotherSlide text='Сертифікати' id='sertyficate'/>
       <AnotherSlide text='Типу резюме' id='resume'/>
-      <AnotherSlide text='Хоббі' id='hobbies'/>
+      <AnotherSlide text='Хоббі' id='hobbies'/> */}
     </div>
   );
 }

@@ -12,7 +12,11 @@ const MyWorks = () => {
       <div className="circle-box">
         <div className="circle"></div>
       </div>
-      <SliderCards />
+      <div className="sliders">
+        <SliderCards />
+        <SliderCards />
+      </div>
+      
     </div>
   );
 };
