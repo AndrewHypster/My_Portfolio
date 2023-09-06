@@ -6,7 +6,7 @@ const SliderCards = () => {
   return (
     <div className="slider">
       {Cards.map((card, i) =>
-        <Link to='frrff'>
+        <Link to={`MyWorks/${i}`}>
           <div className="card" style={{backgroundImage: `url('${card.img}')`}} key={i}>
             <div className="text">
               <h1>{card.title}</h1>
