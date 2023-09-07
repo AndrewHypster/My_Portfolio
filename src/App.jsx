@@ -1,4 +1,4 @@
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Cursor from "./components/some/Cursor";
 import Header from "./components/Header/Header";
 import MainPage from "./components/MainPage";
@@ -17,11 +17,6 @@ function App() {
         <Route path={mainPath} element={<MainPage />} />
         <Route path={`${mainPath}/MyWorks/:id`} element={<WorkPage />} />
       </Routes>
-      {/* <MainPage /> */}
-
-      {/* <AnotherSlide text='Сертифікати' id='sertyficate'/>
-      <AnotherSlide text='Типу резюме' id='resume'/>
-      <AnotherSlide text='Хоббі' id='hobbies'/> */}
     </div>
   );
 }

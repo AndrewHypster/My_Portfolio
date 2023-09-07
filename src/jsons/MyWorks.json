@@ -2,41 +2,56 @@
   {
     "img": "./imgs/MyWorks/1.png",
     "title": "Sign in / up",
-    "short-description": "React, routes, styled-components, hooks",
     "description": "",
-    "technologies": [""],
-    "colorText": ["blue", [0, 4, 6, 9]]
+    "technologies": "React, routes, styled-components, hooks",
+    "colorText": ["blue", [0, 2, 5, 10]],
+    "links": {
+      "watch": "https://andrewhypster.github.io/CURSOR/hw20/build/index.html",
+      "code": "https://github.com/AndrewHypster/CURSOR/tree/master/hw20"
+    }
   },
   {
     "img": "./imgs/MyWorks/2.png",
     "title": "Posts",
-    "short-description": "React, Redux, hooks",
     "description": "",
-    "technologies": [""],
-    "colorText": ["blue", [0, 3]]
+    "technologies": "React, Redux, hooks",
+    "colorText": ["blue", [0, 3]],
+    "links": {
+      "watch": "https://andrewhypster.github.io/CURSOR/hw21/build/index.html",
+      "code": "https://github.com/AndrewHypster/CURSOR/tree/master/hw21"
+    }
   },
   {
     "img": "./imgs/MyWorks/3.png",
     "title": "Calculator",
-    "short-description": "vanial JS",
     "description": "",
-    "technologies": [""],
-    "colorText": ["blue", [0, 4, 6, 9]]
+    "technologies": "vanial JS",
+    "colorText": ["blue", [0, 4, 6, 9]],
+    "links": {
+      "watch": "https://andrewhypster.github.io/Calculator/",
+      "code": "https://github.com/AndrewHypster/Calculator"
+    }
   },
   {
     "img": "./imgs/MyWorks/4.png",
     "title": "X and O",
-    "short-description": "vanial JS",
     "description": "",
-    "technologies": [""],
-    "colorText": ["blue", [0, 6]]
+    "technologies": "vanial JS",
+    "colorText": ["blue", [0, 6]],
+    "links": {
+      "watch": "https://andrewhypster.github.io/X-and-O/",
+      "code": "https://github.com/AndrewHypster/X-and-O"
+    }
   },
   {
     "img": "./imgs/MyWorks/5.png",
     "title": "Tetris",
-    "short-description": "vanial JS",
     "description": "",
-    "technologies": [""],
-    "colorText": ["blue", [0, 3, 5]]
+    "technologies": "vanial JS",
+    "colorText": ["blue", [0, 3, 5]],
+    "links": {
+      "watch": "https://andrewhypster.github.io/Tetris/",
+      "code": "https://github.com/AndrewHypster/Tetris"
+    }
   }
 ]

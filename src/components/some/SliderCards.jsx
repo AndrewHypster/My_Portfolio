@@ -10,7 +10,7 @@ const SliderCards = () => {
           <div className="card" style={{backgroundImage: `url('${card.img}')`}} key={i}>
             <div className="text">
               <h1>{card.title}</h1>
-              <p>{card['short-description']}</p>
+              <p>{card.technologies}</p>
             </div>
           </div>
         </Link>

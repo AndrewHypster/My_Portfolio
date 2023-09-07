@@ -34,8 +34,8 @@ const WorkPage = () => {
 
             </div>
             <div className="buttons">
-              <h3 className='Watch'>Watch</h3>
-              <h3 className='Code'>Code</h3>
+              <a href={Works[id].links.watch} target='_blank'><h3 className='Watch'>Watch</h3></a>
+              <a href={Works[id].links.code} target='_blank'><h3 className='Code'>Code</h3></a>
             </div>
           </div>
         </div>
