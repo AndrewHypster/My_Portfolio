@@ -2,7 +2,7 @@
   {
     "img": "./imgs/MyWorks/1.png",
     "title": "Sign in / up",
-    "description": "",
+    "description": ["Login and registration form.", "All user information is recorded in localstorage. When you fill in some fields, there is a check for their privilege, for example, for a name, there must be at least three letters and no numbers. If you forgot your password, you can erase localstorage.", "I did this project in a course, so we didn't download any plugins or libraries to develop the logic."],
     "technologies": "React, routes, styled-components, hooks",
     "colorText": ["blue", [0, 2, 5, 10]],
     "links": {
@@ -13,7 +13,7 @@
   {
     "img": "./imgs/MyWorks/2.png",
     "title": "Posts",
-    "description": "",
+    "description": ["Creating a post in a social network", "You can choose a user, write text and attach a string to the photo of the new post. You can also put likes.", "I did this project in a course, so we didn't download any plugins or libraries to develop the logic."],
     "technologies": "React, Redux, hooks",
     "colorText": ["blue", [0, 3]],
     "links": {
@@ -24,7 +24,7 @@
   {
     "img": "./imgs/MyWorks/3.png",
     "title": "Calculator",
-    "description": "",
+    "description": ["A simple calculator", "I took the style from the calculator for iPhones.", "One of the first projects."],
     "technologies": "vanial JS",
     "colorText": ["blue", [0, 4, 6, 9]],
     "links": {
@@ -35,7 +35,7 @@
   {
     "img": "./imgs/MyWorks/4.png",
     "title": "X and O",
-    "description": "",
+    "description": ["Tics and tic-tac-toe", "Points are counted, and if there is a tie, one is added to everyone", "A simple game where I learned the basics of js and css"],
     "technologies": "vanial JS",
     "colorText": ["blue", [0, 6]],
     "links": {
@@ -46,7 +46,7 @@
   {
     "img": "./imgs/MyWorks/5.png",
     "title": "Tetris",
-    "description": "",
+    "description": ["All functionality is present, you can control the buttons on the screen or on the keyboard. Difficulty levels are present (figures fall faster). There are 5 levels, the difference between them is 500 points", "I did it by repeating the video from YouTube. I was just learning js on my own"],
     "technologies": "vanial JS",
     "colorText": ["blue", [0, 3, 5]],
     "links": {
