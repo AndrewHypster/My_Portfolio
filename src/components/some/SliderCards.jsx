@@ -8,7 +8,7 @@ const SliderCards = () => {
     <div className="slider">
       {Cards.map((card, i) =>
         <Link to={`MyWorks/${i}`} onClick={scrollUp}>
-          <div className="card" style={{backgroundImage: `url('${card.img}')`}} key={i}>
+          <div className="card" style={{backgroundImage: `url('${card.imgs[0]}')`}} key={i}>
             <div className="text">
               <h1>{card.title}</h1>
               <p>{card.technologies}</p>

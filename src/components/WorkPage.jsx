@@ -17,7 +17,9 @@ const WorkPage = () => {
 
           <section>
             <div className="slider-img">
-              <h3>SLIDER</h3>
+              {Works[id].imgs.map(img => 
+                <img src={img} />
+              )}
             </div>
             <div className="data"></div>
           </section>
