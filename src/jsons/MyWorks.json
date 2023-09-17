@@ -33,7 +33,7 @@
     }
   },
   {
-    "imgs": ["./imgs/MyWorks/4/0.png"],
+    "imgs": ["./imgs/MyWorks/4/0.png", "./imgs/MyWorks/4/1.png", "./imgs/MyWorks/4/3.png"],
     "title": "X and O",
     "description": ["Tics and tic-tac-toe", "Points are counted, and if there is a tie, one is added to everyone", "A simple game where I learned the basics of js and css"],
     "technologies": "vanial JS",
