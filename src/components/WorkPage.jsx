@@ -18,7 +18,7 @@ const WorkPage = () => {
           <section>
             <div className="slider-img">
               {Works[id].imgs.map(img => 
-                <img src={img} />
+                <div src={{backgroundImg: `url(${img})`}}></div>
               )}
             </div>
             <div className="data"></div>
