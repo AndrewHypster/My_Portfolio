@@ -21,20 +21,55 @@
           h3
             color: aliceblue
 
+        .slider-info::-webkit-scrollbar
+          width: 0
         .slider-info
+          width: 33.25rem
           margin-top: -1.5rem
+          overflow-y: auto
+          display: flex
 
-          h2
-            font-size: 4rem
+          .scrollDown
+            position: absolute
+            width: 30rem
+            margin-top: -20px
+            align-items: center
+            overflow: hidden
+            display: flex
 
+            p
+              margin: 0 5px
+              color: #999
+              white-space: nowrap
+              transform: translateX(-120px)
+              animation: scrollDown-p 5s 2s forwards
             .hr
-              width: 80%
-              height: 0.0625rem
-              background: black
-          
-          p
-            width: 31.25rem
-            margin-top: 1rem
+              width: 0px
+              height: 1px
+              background: #999
+              animation: hr-width 5s 2s forwards
+            .right
+              margin: 2.5px 0 0 -9px
+              transform: translateX(-120px)
+              animation: scrollDown-p 5s 2s forwards
+            
+          .infoSlide
+            width: fit-content
+            margin-right: 2rem
+            pointer-events: none
+            user-select: none
+
+            h2
+              font-size: 4rem
+
+              .hr
+                width: 80%
+                height: 0.0625rem
+                background: black
+            
+            p
+              width: 31.25rem
+              margin-top: 1rem
 
         .buttons
           width: 80%
@@ -57,3 +92,25 @@
             background: #DC6F2E
           .Code
             background: #0059AB
+
+@keyframes hr-width
+  0%
+    width: 0
+  40%
+    width: 300px
+  60%
+    width: 300px
+    transform: translateX(0)
+  100%
+    width: 0px
+    transform: translateX(600px)
+
+@keyframes scrollDown-p
+  0%
+    transform: translateX(-120px)
+  40%
+    transform: translateX(0)
+  60%
+    transform: translateX(0)
+  100%
+    transform: translateX(600px)

@@ -3,7 +3,7 @@
     "imgs": ["./imgs/MyWorks/1/0.png"],
     "title": "Sign in / up",
     "description": ["Login and registration form.", "All user information is recorded in localstorage. When you fill in some fields, there is a check for their privilege, for example, for a name, there must be at least three letters and no numbers. If you forgot your password, you can erase localstorage.", "I did this project in a course, so we didn't download any plugins or libraries to develop the logic."],
-    "technologies": "React, routes, styled-components, hooks",
+    "technologies": ["React", "routes", "styled-components", "hooks"],
     "colorText": ["blue", [0, 2, 5, 10]],
     "links": {
       "watch": "https://andrewhypster.github.io/CURSOR/hw20/build/index.html",
@@ -14,7 +14,7 @@
     "imgs": ["./imgs/MyWorks/2/0.png"],
     "title": "Posts",
     "description": ["Creating a post in a social network", "You can choose a user, write text and attach a string to the photo of the new post. You can also put likes.", "I did this project in a course, so we didn't download any plugins or libraries to develop the logic."],
-    "technologies": "React, Redux, hooks",
+    "technologies": ["React", "Redux", "hooks"],
     "colorText": ["blue", [0, 3]],
     "links": {
       "watch": "https://andrewhypster.github.io/CURSOR/hw21/build/index.html",
@@ -25,7 +25,7 @@
     "imgs": ["./imgs/MyWorks/3/0.png"],
     "title": "Calculator",
     "description": ["A simple calculator", "I took the style from the calculator for iPhones.", "One of the first projects."],
-    "technologies": "vanial JS",
+    "technologies": ["vanial JS"],
     "colorText": ["blue", [0, 4, 6, 9]],
     "links": {
       "watch": "https://andrewhypster.github.io/Calculator/",
@@ -36,7 +36,7 @@
     "imgs": ["./imgs/MyWorks/4/0.png", "./imgs/MyWorks/4/1.png", "./imgs/MyWorks/4/3.png"],
     "title": "X and O",
     "description": ["Tics and tic-tac-toe", "Points are counted, and if there is a tie, one is added to everyone", "A simple game where I learned the basics of js and css"],
-    "technologies": "vanial JS",
+    "technologies": ["vanial JS"],
     "colorText": ["blue", [0, 6]],
     "links": {
       "watch": "https://andrewhypster.github.io/X-and-O/",
@@ -47,7 +47,7 @@
     "imgs": ["./imgs/MyWorks/5/0.png"],
     "title": "Tetris",
     "description": ["All functionality is present, you can control the buttons on the screen or on the keyboard. Difficulty levels are present (figures fall faster). There are 5 levels, the difference between them is 500 points", "I did it by repeating the video from YouTube. I was just learning js on my own"],
-    "technologies": "vanial JS",
+    "technologies": ["vanial JS"],
     "colorText": ["blue", [0, 3, 5]],
     "links": {
       "watch": "https://andrewhypster.github.io/Tetris/",
